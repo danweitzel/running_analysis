@@ -1,7 +1,7 @@
 # Running Analysis
 
 <p align="center">
-<img src="figures/monthly_avg_pace_over_time.pdf" width="650">
+<img src="figures/monthly_avg_pace_over_time.png" width="650">
 </p>
 
 ## Description
@@ -17,12 +17,12 @@ This repository holds an analysis of my running habits and development. The goal
 I was wondering how much I've been running over time and how my current running habits compare to those of previous years. The figure below is the cumulative running distance in each month. The gray lines are past years, the red line is 2021. This ought to motivate me to keep running and beat past years.  
 
 <p align="center">
-<img src="figures/monthly_distance_cumulative.pdf" width="650">
+<img src="figures/monthly_distance_cumulative.png" width="650">
 </p>
 
 
 <p align="center">
-<img src="figures/monthly_avg_pace_over_time.pdf" width="650">
+<img src="figures/monthly_avg_pace_over_time.png" width="650">
 </p>
 
 
@@ -31,7 +31,7 @@ I was wondering how much I've been running over time and how my current running 
 Next, I was interested in my average 
 
 <p align="center">
-<img src="figures/histogram_distance.pdf" width="650">
+<img src="figures/histogram_distance.png" width="650">
 </p>
 
 
