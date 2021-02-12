@@ -51,7 +51,7 @@ Now looking at average pace: Here we can see a similar story as in the previous 
 
 
 
-
+```
 \begin{table}
 \caption{Regression models}
 \begin{center}
@@ -76,7 +76,7 @@ Num. obs.      & $390$      & $365$          & $311$          & $333$         & 
 \label{table:coefficients}
 \end{center}
 \end{table}
-
+```
 
 
 
