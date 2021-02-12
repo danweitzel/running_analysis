@@ -9,8 +9,8 @@ This repository holds an analysis of my running habits and development. The goal
 
 ## Content
 1. The [01_data_preprocessing.R](./scripts/01_data_preprocessing.R) script, which prepares the downloaded Garmin data for analysis. The script is called with `source()` in all other scripts. 
-2. The [02_data_visualization.R](./script/02_data_visualization.R) script, which produces a series of plots of quantities that I am interested in. Among those are over time developments of my average pace of my runs, running distance, and elevation gain. I am also interested in the relationship between heart rate, pace, and distance. Figures are stored in the [figures](./figures/) folder.
-3. The [03_data_analysis.R](./script/03_data_analysis.R) script, which analyzes the data with statistical models
+2. The [02_data_visualization.R](./scripts/02_data_visualization.R) script, which produces a series of plots of quantities that I am interested in. Among those are over time developments of my average pace of my runs, running distance, and elevation gain. I am also interested in the relationship between heart rate, pace, and distance. Figures are stored in the [figures](./figures/) folder.
+3. The [03_data_analysis.R](./scripts/03_data_analysis.R) script, which analyzes the data with statistical models
 
 ## Analysis
 
