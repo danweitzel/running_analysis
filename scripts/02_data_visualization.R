@@ -43,8 +43,8 @@ df_garmin %>%
   theme(axis.text.x = element_text(angle = 45),  legend.position = "none") +
   labs(x = "Month", y = "Distance, km", 
        title = "Monthly running distance over the years")
-ggsave("figures/monthly_distance_over_time.pdf",
-       width = 14, height = 7, dpi = 150, device='pdf')
+ggsave("figures/monthly_distance_over_time.png",
+       width = 14, height = 7, dpi = 150, device='png')
 
 ## Plot 2: Cumulative distance in one plot - COLOR
 df_garmin %>% 
@@ -77,8 +77,8 @@ df_garmin %>%
   labs(x = "Month", y = "Running distance in meter", color = "Year",
        title = "Cummulative running distance",
        caption = "Note: Current year in red, all other years gray")
-ggsave("figures/monthly_distance_cumulative.pdf",
-       width = 7, height = 7, dpi = 150, device='pdf')
+ggsave("figures/monthly_distance_cumulative.png",
+       width = 7, height = 7, dpi = 150, device='png')
 
 ## Plot 4: Average pace over time 
 df_garmin %>% 
@@ -93,8 +93,8 @@ df_garmin %>%
   labs(x = "Month", y = "Average pace, minutes/km", 
        title = "Monthly average running pace over the years",
        caption = "Note: Runs range from 5 to 20 a month")
-ggsave("figures/monthly_avg_pace_over_time.pdf",
-       width = 14, height = 7, dpi = 150, device='pdf')
+ggsave("figures/monthly_avg_pace_over_time.png",
+       width = 14, height = 7, dpi = 150, device='png')
 
 ## Plot 5: Correlation between hr and pace
 df_garmin %>% 
@@ -115,8 +115,8 @@ df_garmin %>%
   geom_bar() + theme_minimal() +
   labs(title = "Histogram of running distance", x = "Distance", y = "Count",
        caption = "Note = Distances are rounded to kilometers")
-ggsave("figures/histogram_distance.pdf",
-       width = 10, height = 7, dpi = 150, device='pdf')
+ggsave("figures/histogram_distance.png",
+       width = 10, height = 7, dpi = 150, device='png')
   
 ## Plot 8: Correlation between hr and distance
 ## Based on the drop in the histogram at the 10km mark I am examining differences
@@ -129,8 +129,8 @@ df_garmin %>%
   theme_minimal() + theme(legend.position = "none") +
   labs(x = "Distance in km", y = "Average heart rate, bpm", 
        title = "Relationship between heart rate and running distance")
-ggsave("figures/relationship_heartrate_distance.pdf",
-       width = 10, height = 7, dpi = 150, device='pdf')
+ggsave("figures/relationship_heartrate_distance.png",
+       width = 10, height = 7, dpi = 150, device='png')
 
 ## Plot 9: Correlation between pace and distance
 ## Based on the drop in the histogram at the 10km mark I am examining differences
@@ -144,8 +144,8 @@ df_garmin %>%
   theme_minimal() + theme(legend.position = "none") + 
   labs(x = "Distance in km", y = "Average pace, m/km", 
        title = "Relationship between average running pace and running distance")
-ggsave("figures/relationship_pace_distance.pdf",
-       width = 10, height = 7, dpi = 150, device='pdf')
+ggsave("figures/relationship_pace_distance.png",
+       width = 10, height = 7, dpi = 150, device='png')
 
 ## Plot 10: Cumulative elevation
 df_garmin %>% 

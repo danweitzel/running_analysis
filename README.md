@@ -1,7 +1,7 @@
 # Running Analysis
 
 <p align="center">
-<img src="figures/monthly_avg_pace_over_time.png" width="650">
+<img src="figures/monthly_avg_pace_over_time.png" width="800">
 </p>
 
 ## Description
@@ -21,6 +21,11 @@ I was wondering how much I've been running over time and how my current running 
 </p>
 
 
+
+<p align="center">
+<img src="figures/histogram_distance.png" width="650">
+</p>
+
 <p align="center">
 <img src="figures/monthly_avg_pace_over_time.png" width="650">
 </p>
@@ -30,9 +35,7 @@ I was wondering how much I've been running over time and how my current running 
 
 Next, I was interested in my average 
 
-<p align="center">
-<img src="figures/histogram_distance.png" width="650">
-</p>
+
 
 
 
