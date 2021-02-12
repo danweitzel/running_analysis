@@ -79,4 +79,104 @@ Num. obs.      & $390$      & $365$          & $311$          & $333$         & 
 ```
 
 
+<table class="texreg" style="margin: 10px auto;border-collapse: collapse;border-spacing: 0px;color: #000000;border-top: 2px solid #000000;">
+<caption>Regression models</caption>
+<thead>
+<tr>
+<th style="padding-left: 5px;padding-right: 5px;">&nbsp;</th>
+<th style="padding-left: 5px;padding-right: 5px;">Distance</th>
+<th style="padding-left: 5px;padding-right: 5px;">Avg. HR</th>
+<th style="padding-left: 5px;padding-right: 5px;">Avg. HR</th>
+<th style="padding-left: 5px;padding-right: 5px;">Avg. Pace</th>
+<th style="padding-left: 5px;padding-right: 5px;">Calories</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-top: 1px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">Year</td>
+<td style="padding-left: 5px;padding-right: 5px;">0.16<sup>*</sup></td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">-1.89<sup>***</sup></td>
+<td style="padding-left: 5px;padding-right: 5px;">0.08<sup>**</sup></td>
+<td style="padding-left: 5px;padding-right: 5px;">3.94</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.09)</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.27)</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.03)</td>
+<td style="padding-left: 5px;padding-right: 5px;">(5.68)</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">Avg. Pace</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">-11.77<sup>***</sup></td>
+<td style="padding-left: 5px;padding-right: 5px;">-11.51<sup>***</sup></td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">-27.51<sup>***</sup></td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.44)</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.46)</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">(9.01)</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">Distance</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">0.15</td>
+<td style="padding-left: 5px;padding-right: 5px;">-0.05<sup>***</sup></td>
+<td style="padding-left: 5px;padding-right: 5px;">-2.95</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.14)</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.02)</td>
+<td style="padding-left: 5px;padding-right: 5px;">(3.02)</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">Elevation Gain</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">0.01</td>
+<td style="padding-left: 5px;padding-right: 5px;">-0.00</td>
+<td style="padding-left: 5px;padding-right: 5px;">1.04<sup>***</sup></td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.02)</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.00)</td>
+<td style="padding-left: 5px;padding-right: 5px;">(0.35)</td>
+</tr>
+<tr style="border-top: 1px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">R<sup>2</sup></td>
+<td style="padding-left: 5px;padding-right: 5px;">0.01</td>
+<td style="padding-left: 5px;padding-right: 5px;">0.66</td>
+<td style="padding-left: 5px;padding-right: 5px;">0.72</td>
+<td style="padding-left: 5px;padding-right: 5px;">0.06</td>
+<td style="padding-left: 5px;padding-right: 5px;">0.06</td>
+</tr>
+<tr style="border-bottom: 2px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">Num. obs.</td>
+<td style="padding-left: 5px;padding-right: 5px;">390</td>
+<td style="padding-left: 5px;padding-right: 5px;">365</td>
+<td style="padding-left: 5px;padding-right: 5px;">311</td>
+<td style="padding-left: 5px;padding-right: 5px;">333</td>
+<td style="padding-left: 5px;padding-right: 5px;">333</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="font-size: 0.8em;" colspan="6">All models are ordinary least squares regressions.</td>
+</tr>
+</tfoot>
+</table>
 
