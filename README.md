@@ -21,7 +21,7 @@ I was wondering how much I've been running over time and how my current running 
 </p>
 
 
-A second metric that I am interested in is my average monthly pace. How fast are the runs that I am doing. The figure below shows my monthly average pace (lower is better) over time. The size and color of the dots indicate the number of runs (larger and ligher means more). With the preparation for the Austin Halfironman in 2019 the training got a lot more structured and the variability of my average pace dropped. 
+A second metric that I am interested in is my average monthly pace (how many minutes I need per kilometer). How fast are the runs that I am doing? The figure below shows my monthly average pace (lower is faster) over time. The size and color of the dots indicate the number of runs (larger and brighter means more). With the preparation for the Austin Halfironman in 2019 the training got a lot more structured and the variability of my average pace dropped. 
 
 <p align="center">
 <img src="figures/monthly_avg_pace_over_time.png" width="650">
@@ -35,9 +35,9 @@ I am also interested in what type of distances I run. Most of my runs ar either 
 </p>
 
 
-Based on the separation in the frequency of distances in the histogram above I set out to examine the relationship between heart rate and running distance and pace and running distance. 
+Based on the separation in the frequency of distances in the histogram above I set out to examine the relationship between running distance and a) heart rate and b) pace. 
 
-Looking first at heart rate: For runs up to 10km we have steep increase in my average heart rate. Going through entries in the data it becomes clear that the shorter runs in this subset are recovery runs and runs with friends and the runs closer to 10k are predominantly interval sessions and tempo runs from the Garmin Training Plan. That would explain the observed relationship pretty well. The relationship between average heart rate and running distance disappears for runs that are longer than 10km. Apparently, I'm able to find a rhythm in longer runs that I've no problems keeping up for some time. 
+Looking first at heart rate: For runs up to 10km we have a steep increase in my average heart rate with each additional kilometer. Going through entries in the data it becomes clear that the shorter runs in this subset are recovery runs and runs with friends and the runs closer to 10k are predominantly interval sessions and tempo runs from the Garmin Training Plan. That would explain the observed relationship pretty well. The relationship between average heart rate and running distance disappears for runs that are longer than 10km. Apparently, I'm able to find a rhythm in longer runs that I've no problems keeping up for some time. 
 
 <p align="center">
 <img src="figures/relationship_heartrate_distance.png" width="650">
