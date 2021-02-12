@@ -50,7 +50,7 @@ ggsave("figures/monthly_distance_over_time.png",
 df_garmin %>% 
   dplyr::select(year, month_char, distance) %>% 
   group_by(year, month_char) %>% 
-  dpolyr::summarize(monthly_distance = sum(distance)) %>% 
+  dplyr::summarize(monthly_distance = sum(distance)) %>% 
   group_by(year) %>% 
   mutate(total_distance = cumsum(monthly_distance)) %>% 
   ungroup() %>% 
@@ -58,7 +58,7 @@ df_garmin %>%
   geom_line() +
   theme_minimal() + theme(axis.text.x = element_text(angle = 45)) + 
   labs(x = "Month", y = "Running distance in meter", color = "Year",
-       title = "Cummulative running distance")
+       title = "Cumulative running distance")
 
 ## Plot 3: Cumulative distance in one plot - GRAY AND RED
 df_garmin %>% 
@@ -75,7 +75,7 @@ df_garmin %>%
   theme_minimal() + theme(axis.text.x = element_text(angle = 45), 
                           legend.position = "none") + 
   labs(x = "Month", y = "Running distance in meter", color = "Year",
-       title = "Cummulative running distance",
+       title = "Cumulative running distance",
        caption = "Note: Current year in red, all other years gray")
 ggsave("figures/monthly_distance_cumulative.png",
        width = 7, height = 7, dpi = 150, device='png')
@@ -159,7 +159,7 @@ df_garmin %>%
   geom_line() +
   theme_minimal() + theme(axis.text.x = element_text(angle = 45)) + 
   labs(x = "Month", y = "Elevation gain in meter", color = "Year",
-       title = "Cummulative monthly elevation gain")
+       title = "Cumulative monthly elevation gain")
 
 
 
