@@ -87,3 +87,7 @@ texreg(list(lm1, lm2, lm3, lm4, lm5),
           digits=2,
           stars=c(0.01, 0.05, 0.1))
 
+# clean up
+rm(df_analysis, lm1, lm2, lm3, lm4, lm5)
+
+# fin
