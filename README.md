@@ -14,7 +14,7 @@ This repository holds an analysis of my running habits and development. The goal
 
 ## Analysis
 
-I was wondering how much I've been running over time and how my current running habits compare to those of previous years. The figure below is the cumulative running distance in each month. The gray lines are past years, the red line is 2021. This ought to motivate me to keep running and beat past years.  
+I was wondering how much I've been running over time and how my current running habits compare to those of previous years. The figure below is the cumulative running distance in each month. The gray lines are past years, the red line is 2021. This ought to motivate me to keep running and beat past years. *This figure will be updated monthly.*
 
 <p align="center">
 <img src="figures/monthly_distance_cumulative.png" width="650">
