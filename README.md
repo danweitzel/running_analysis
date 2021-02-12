@@ -21,7 +21,7 @@ I was wondering how much I've been running over time and how my current running 
 </p>
 
 
-A second metric that I am interested in is my average monthly pace. How fast are the runs that I am doing. The figure below shows my monthly average pace (lower is better) over time. The size and color of the dots indicate the number of runs (larger and ligher means more).
+A second metric that I am interested in is my average monthly pace. How fast are the runs that I am doing. The figure below shows my monthly average pace (lower is better) over time. The size and color of the dots indicate the number of runs (larger and ligher means more). With the preparation for the Austin Halfironman in 2019 the training got a lot more structured and the variability of my average pace dropped. 
 
 <p align="center">
 <img src="figures/monthly_avg_pace_over_time.png" width="650">
