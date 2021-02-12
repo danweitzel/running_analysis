@@ -52,6 +52,30 @@ Now looking at average pace: Here we can see a similar story as in the previous 
 
 
 
+\begin{table}
+\caption{Regression models}
+\begin{center}
+\begin{tabular}{l c c c c c}
+\hline
+ & Distance & Avg. HR & Avg. HR & Avg. Pace & Calories \\
+\hline
+Year           & $0.16^{*}$ &                & $-1.89^{***}$  & $0.08^{**}$   & $3.94$         \\
+               & $(0.09)$   &                & $(0.27)$       & $(0.03)$      & $(5.68)$       \\
+Avg. Pace      &            & $-11.77^{***}$ & $-11.51^{***}$ &               & $-27.51^{***}$ \\
+               &            & $(0.44)$       & $(0.46)$       &               & $(9.01)$       \\
+Distance       &            &                & $0.15$         & $-0.05^{***}$ & $-2.95$        \\
+               &            &                & $(0.14)$       & $(0.02)$      & $(3.02)$       \\
+Elevation Gain &            &                & $0.01$         & $-0.00$       & $1.04^{***}$   \\
+               &            &                & $(0.02)$       & $(0.00)$      & $(0.35)$       \\
+\hline
+R$^2$          & $0.01$     & $0.66$         & $0.72$         & $0.06$        & $0.06$         \\
+Num. obs.      & $390$      & $365$          & $311$          & $333$         & $333$          \\
+\hline
+\multicolumn{6}{l}{\scriptsize{All models are ordinary least squares regressions.}}
+\end{tabular}
+\label{table:coefficients}
+\end{center}
+\end{table}
 
 
 

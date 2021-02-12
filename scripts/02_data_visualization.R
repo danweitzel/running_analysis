@@ -34,7 +34,7 @@ library("tidyverse")
 df_garmin %>% 
   dplyr::select(year, month_char, distance) %>% 
   group_by(year, month_char) %>% 
-  summarize(total_distance = sum(distance)) %>% 
+  dplyr::summarize(total_distance = sum(distance)) %>% 
   ungroup() %>%
   ggplot(aes(x = month_char, y = total_distance, group = year, 
              color = as.factor(year))) +
@@ -50,7 +50,7 @@ ggsave("figures/monthly_distance_over_time.png",
 df_garmin %>% 
   dplyr::select(year, month_char, distance) %>% 
   group_by(year, month_char) %>% 
-  summarize(monthly_distance = sum(distance)) %>% 
+  dpolyr::summarize(monthly_distance = sum(distance)) %>% 
   group_by(year) %>% 
   mutate(total_distance = cumsum(monthly_distance)) %>% 
   ungroup() %>% 
@@ -64,7 +64,7 @@ df_garmin %>%
 df_garmin %>% 
   dplyr::select(year, month_char, distance) %>% 
   group_by(year, month_char) %>% 
-  summarize(monthly_distance = sum(distance)) %>% 
+  dplyr::summarize(monthly_distance = sum(distance)) %>% 
   group_by(year) %>% 
   mutate(total_distance = cumsum(monthly_distance),
          current = ifelse(year == 2021, "Yes", "No")) %>% 
@@ -84,7 +84,7 @@ ggsave("figures/monthly_distance_cumulative.png",
 df_garmin %>% 
   dplyr::select(year, month_char, avg_pace) %>% 
   group_by(year, month_char) %>% 
-  summarize(average_pace = mean(avg_pace), n_runs = n()) %>% 
+  dplyr::summarize(average_pace = mean(avg_pace), n_runs = n()) %>% 
   ungroup() %>%
   ggplot(aes(x = month_char, y = average_pace, group = year, color = n_runs)) +
   geom_point(aes(size = n_runs)) + facet_wrap(~year, nrow = 2) + geom_line() +
@@ -151,7 +151,7 @@ ggsave("figures/relationship_pace_distance.png",
 df_garmin %>% 
   dplyr::select(year, month_char, elev_gain) %>% 
   group_by(year, month_char) %>% 
-  summarize(monthly_elev = sum(elev_gain)) %>% 
+  dplyr::summarize(monthly_elev = sum(elev_gain)) %>% 
   group_by(year) %>% 
   mutate(total_elev = cumsum(monthly_elev)) %>% 
   ungroup() %>% 

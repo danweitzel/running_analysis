@@ -33,7 +33,7 @@ df_garmin <- read_csv("data/garmin.csv") %>%
   filter(activity_type == "Running") %>% 
   separate(date, into = c("date", "time"), sep = " ") %>% 
   mutate_all(str_replace_all, ",|:", ".") %>% 
-  mutate(across(c(distance, avg_pace, avg_hr, elev_gain), as.numeric),
+  mutate(across(c(distance, avg_pace, avg_hr, elev_gain, calories), as.numeric),
          date = ymd(date), 
          year =  year(date),
          month = month(date),
