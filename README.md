@@ -28,7 +28,7 @@ A second metric that I am interested in is my average monthly pace (how many min
 </p>
 
 
-I am also interested in what type of distances I run. Most of my runs ar either part of a Garmin Training Plan or runs with friends. The distances have been rounded to full kilometers for better visualization. Apparently I have a lot of runs between 5k and 10k and then fewer runs between 10k and up to the marathon distance. 
+I am also interested in what type of distances I run. Most of my runs are either part of a Garmin Training Plan or runs with my wife or friends. The distances have been rounded to full kilometers for better visualization. Apparently I have a lot of runs between 5k and 10k and then fewer runs between 10k and up to the marathon distance. 
 
 <p align="center">
 <img src="figures/histogram_distance.png" width="650">
