@@ -41,7 +41,8 @@ library("corrplot")
 ## Reduce data frame to variables used in the analysis
 df_analysis <-
   df_garmin %>% 
-  dplyr::select(distance, year, avg_pace, avg_hr, elev_gain, calories)
+  dplyr::select(distance, year, avg_pace, avg_hr, elev_gain, calories) %>% 
+  mutate(km10 = ifelse(distance > 10.5, TRUE, FALSE))
 
 
 ```
@@ -57,17 +58,19 @@ lm2 <- lm(avg_hr ~ avg_pace, data = df_analysis)
 
 # Model 3: What explains variation in my avg. heart rate? Multivariate model with other covariates
 # Unfortunately I don't have weather 
-lm3 <- lm(avg_hr ~ distance + avg_pace + elev_gain + year, data = df_analysis)
+lm3 <- lm(avg_hr ~ distance + km10 + avg_pace + elev_gain + year, data = df_analysis)
 
 # Model 4: What explains variation in my average pace?
-lm4 <- lm(avg_pace ~ distance + elev_gain + year, data = df_analysis)
+lm4 <- lm(avg_pace ~ distance + km10 + elev_gain + year, data = df_analysis)
 
 # Model 5: What explains variation in my estimated calories for the run
-lm5 <- lm(calories ~ distance + avg_pace + elev_gain + year, data = df_analysis)
+lm5 <- lm(calories ~ distance + km10 + avg_pace + elev_gain + year, data = df_analysis)
 
+
+## Export table to Latex
 texreg(list(lm1, lm2, lm3, lm4, lm5),
           custom.model.names = c("Distance", "Avg. HR", "Avg. HR", "Avg. Pace", "Calories"),
-          custom.coef.names = c("Intercept", "Year", "Avg. Pace", "Distance", "Elevation Gain"),
+          custom.coef.names = c("Intercept", "Year", "Avg. Pace", "Distance", "more than 10k", "Elevation Gain"),
           omit.coef = "Intercept",
           caption="Regression models", 
           caption.above = TRUE,
