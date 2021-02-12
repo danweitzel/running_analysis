@@ -12,7 +12,7 @@ This repository holds an analysis of my running habits and development. The goal
 2. The [02_data_visualization.R](./scripts/02_data_visualization.R) script, which produces a series of plots of quantities that I am interested in. Among those are over time developments of my average pace of my runs, running distance, and elevation gain. I am also interested in the relationship between heart rate, pace, and distance. Figures are stored in the [figures](./figures/) folder.
 3. The [03_data_analysis.R](./scripts/03_data_analysis.R) script, which analyzes the data with statistical models
 
-## Analysis
+## Visual Analysis
 
 I was wondering how much I've been running over time and how my current running habits compare to those of previous years. The figure below is the cumulative running distance in each month. The gray lines are past years, the red line is 2021. This ought to motivate me to keep running and beat past years. *This figure will be updated monthly.*
 
@@ -49,134 +49,11 @@ Now looking at average pace: Here we can see a similar story as in the previous 
 <img src="figures/relationship_pace_distance.png" width="650">
 </p>
 
+## Regression Analysis
+
+<p align="center">
+<img src="figures/regression.png" width="650">
+</p>
 
 
-```
-\begin{table}
-\caption{Regression models}
-\begin{center}
-\begin{tabular}{l c c c c c}
-\hline
- & Distance & Avg. HR & Avg. HR & Avg. Pace & Calories \\
-\hline
-Year           & $0.16^{*}$ &                & $-1.89^{***}$  & $0.08^{**}$   & $3.94$         \\
-               & $(0.09)$   &                & $(0.27)$       & $(0.03)$      & $(5.68)$       \\
-Avg. Pace      &            & $-11.77^{***}$ & $-11.51^{***}$ &               & $-27.51^{***}$ \\
-               &            & $(0.44)$       & $(0.46)$       &               & $(9.01)$       \\
-Distance       &            &                & $0.15$         & $-0.05^{***}$ & $-2.95$        \\
-               &            &                & $(0.14)$       & $(0.02)$      & $(3.02)$       \\
-Elevation Gain &            &                & $0.01$         & $-0.00$       & $1.04^{***}$   \\
-               &            &                & $(0.02)$       & $(0.00)$      & $(0.35)$       \\
-\hline
-R$^2$          & $0.01$     & $0.66$         & $0.72$         & $0.06$        & $0.06$         \\
-Num. obs.      & $390$      & $365$          & $311$          & $333$         & $333$          \\
-\hline
-\multicolumn{6}{l}{\scriptsize{All models are ordinary least squares regressions.}}
-\end{tabular}
-\label{table:coefficients}
-\end{center}
-\end{table}
-```
-
-
-<table class="texreg" style="margin: 10px auto;border-collapse: collapse;border-spacing: 0px;color: #000000;border-top: 2px solid #000000;">
-<caption>Regression models</caption>
-<thead>
-<tr>
-<th style="padding-left: 5px;padding-right: 5px;">&nbsp;</th>
-<th style="padding-left: 5px;padding-right: 5px;">Distance</th>
-<th style="padding-left: 5px;padding-right: 5px;">Avg. HR</th>
-<th style="padding-left: 5px;padding-right: 5px;">Avg. HR</th>
-<th style="padding-left: 5px;padding-right: 5px;">Avg. Pace</th>
-<th style="padding-left: 5px;padding-right: 5px;">Calories</th>
-</tr>
-</thead>
-<tbody>
-<tr style="border-top: 1px solid #000000;">
-<td style="padding-left: 5px;padding-right: 5px;">Year</td>
-<td style="padding-left: 5px;padding-right: 5px;">0.16<sup>*</sup></td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">-1.89<sup>***</sup></td>
-<td style="padding-left: 5px;padding-right: 5px;">0.08<sup>**</sup></td>
-<td style="padding-left: 5px;padding-right: 5px;">3.94</td>
-</tr>
-<tr>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.09)</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.27)</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.03)</td>
-<td style="padding-left: 5px;padding-right: 5px;">(5.68)</td>
-</tr>
-<tr>
-<td style="padding-left: 5px;padding-right: 5px;">Avg. Pace</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">-11.77<sup>***</sup></td>
-<td style="padding-left: 5px;padding-right: 5px;">-11.51<sup>***</sup></td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">-27.51<sup>***</sup></td>
-</tr>
-<tr>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.44)</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.46)</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">(9.01)</td>
-</tr>
-<tr>
-<td style="padding-left: 5px;padding-right: 5px;">Distance</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">0.15</td>
-<td style="padding-left: 5px;padding-right: 5px;">-0.05<sup>***</sup></td>
-<td style="padding-left: 5px;padding-right: 5px;">-2.95</td>
-</tr>
-<tr>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.14)</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.02)</td>
-<td style="padding-left: 5px;padding-right: 5px;">(3.02)</td>
-</tr>
-<tr>
-<td style="padding-left: 5px;padding-right: 5px;">Elevation Gain</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">0.01</td>
-<td style="padding-left: 5px;padding-right: 5px;">-0.00</td>
-<td style="padding-left: 5px;padding-right: 5px;">1.04<sup>***</sup></td>
-</tr>
-<tr>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.02)</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.00)</td>
-<td style="padding-left: 5px;padding-right: 5px;">(0.35)</td>
-</tr>
-<tr style="border-top: 1px solid #000000;">
-<td style="padding-left: 5px;padding-right: 5px;">R<sup>2</sup></td>
-<td style="padding-left: 5px;padding-right: 5px;">0.01</td>
-<td style="padding-left: 5px;padding-right: 5px;">0.66</td>
-<td style="padding-left: 5px;padding-right: 5px;">0.72</td>
-<td style="padding-left: 5px;padding-right: 5px;">0.06</td>
-<td style="padding-left: 5px;padding-right: 5px;">0.06</td>
-</tr>
-<tr style="border-bottom: 2px solid #000000;">
-<td style="padding-left: 5px;padding-right: 5px;">Num. obs.</td>
-<td style="padding-left: 5px;padding-right: 5px;">390</td>
-<td style="padding-left: 5px;padding-right: 5px;">365</td>
-<td style="padding-left: 5px;padding-right: 5px;">311</td>
-<td style="padding-left: 5px;padding-right: 5px;">333</td>
-<td style="padding-left: 5px;padding-right: 5px;">333</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-<td style="font-size: 0.8em;" colspan="6">All models are ordinary least squares regressions.</td>
-</tr>
-</tfoot>
-</table>
 

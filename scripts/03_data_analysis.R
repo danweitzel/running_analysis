@@ -28,7 +28,6 @@ library("tidyverse")
 library("texreg")
 library("corrplot")
 
-
 ## Reduce data frame to variables used in the analysis
 df_analysis <-
   df_garmin %>% 
@@ -68,13 +67,13 @@ lm4 <- lm(avg_pace ~ distance + elev_gain + year, data = df_analysis)
 # Model 5: What explains variation in my estimated calories for the run
 lm5 <- lm(calories ~ distance + avg_pace + elev_gain + year, data = df_analysis)
 
-
-
+## Examine results in R
 screenreg(list(lm1, lm2, lm3, lm4, lm5),
           custom.model.names = c("Distance", "Avg. HR", "Avg. HR", "Avg. Pace", "Calories"),
           custom.coef.names = c("Intercept", "Year", "Avg. Pace", "Distance", "Elevation Gain"),
           omit.coef = "Intercept")
 
+## Export table to Latex
 texreg(list(lm1, lm2, lm3, lm4, lm5),
           custom.model.names = c("Distance", "Avg. HR", "Avg. HR", "Avg. Pace", "Calories"),
           custom.coef.names = c("Intercept", "Year", "Avg. Pace", "Distance", "Elevation Gain"),
@@ -87,3 +86,4 @@ texreg(list(lm1, lm2, lm3, lm4, lm5),
           include.adjrs = FALSE,
           digits=2,
           stars=c(0.01, 0.05, 0.1))
+
