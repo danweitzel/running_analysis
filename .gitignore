@@ -37,3 +37,6 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Data file, there is too much info in the raw data that I don't want to be available publicly
+garmin.csv
